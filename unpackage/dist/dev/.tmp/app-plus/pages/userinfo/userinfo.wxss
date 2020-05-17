@@ -1,0 +1,70 @@
+
+.container{
+	background: lightgrey;
+}
+.content{
+	 display: -webkit-box;
+	 display: -webkit-flex;
+	 display: flex;
+	        -webkit-box-orient: vertical;
+	        -webkit-box-direction: normal;
+	        -webkit-flex-flow: column;
+	                flex-flow: column;
+/* 	        align-items: center; */
+	background: white;
+}
+.listitem{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0.6rem 1rem;
+	font-size: 0.8rem;
+	border-bottom: 1px solid lightgrey;
+	position: relative;
+}
+.text1{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.headImgUrl{
+	height: 2.5rem;
+	width: 2.5rem;
+	border: 1px solid #CDCDCD;
+	border-radius: 100%;
+}
+.inputtext1{
+	text-align: right;
+}
+.gojiantou:after {
+
+	/* 	content: '';
+		display: block;
+		width: 2%;
+		background: url(../../static/image/ic_fj_arrow.png) 100% 50% no-repeat;
+		position: absolute;
+		right: 1rem;
+		top:1rem;
+		bottom: 1.1rem; */
+}
+.savbtn{
+		    background: #007AFF;
+		    color: white;
+		    display: block;
+		    padding: 1rem auto;
+		    font-size: 0.9rem;
+		    padding: 1rem auto;
+		    margin: 3rem auto;
+		    width: 40%;
+		    height: 2rem;
+		    line-height: 2rem;
+		    text-align: center;
+		    border-radius: 3px;
+}
+.savbtnshow{
+		display: block;
+}
+.savbtnhide{
+		display: none;
+}
+

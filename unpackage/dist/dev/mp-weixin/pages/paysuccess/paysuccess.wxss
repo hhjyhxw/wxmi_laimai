@@ -1,0 +1,74 @@
+
+.container{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-flow: column;
+		        flex-flow: column;
+		background: lightgrey;
+		height: 100%;
+}
+.hearder{
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: flex;
+		    background: white;
+		    padding: 1.5rem 1rem 1.5rem 1rem;
+		    margin-bottom: 1rem;
+}
+.uni-text-07{
+		padding-left: 1rem;
+		font-size: 1rem;
+}
+.uni-cart-imgbox{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+}
+.uni-cart-img15{
+		width: 1.5rem;
+		height: 1.5rem;
+}
+.content{
+		background: white;
+		padding-left: 1rem;
+		padding-top: 1rem;
+}
+.listitem{
+		background: white;
+		font-size: 0.7rem;
+		color: #383030;
+		padding: 0.3rem 0rem 0.3rem 0rem;
+		border-bottom: 1px solid lightgrey;
+}
+.no_text{
+		color: black;
+		padding-left: 0.5rem;
+}
+.money_text{
+		color: red;
+		padding-left: 0.5rem;
+}
+.footerlist{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		padding: 1rem;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+}
+.footerlistitem{
+		background: white;
+		display: block;
+		padding: 0.5rem;
+		font-size: 0.7rem;
+		margin: 1rem;
+		border-radius: 3px;
+}
+

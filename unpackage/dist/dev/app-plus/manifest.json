@@ -1,0 +1,182 @@
+{
+  "@platforms": [
+    "android",
+    "iPhone",
+    "iPad"
+  ],
+  "id": "__UNI__ADA8003",
+  "name": "海韵之友",
+  "version": {
+    "name": "1.0.7",
+    "code": "100"
+  },
+  "description": "",
+  "launch_path": "__uniappview.html",
+  "developer": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "permissions": {
+    "Payment": {},
+    "OAuth": {},
+    "Contacts": {},
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
+  },
+  "plus": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "splashscreen": {
+      "target": "id:1",
+      "autoclose": true,
+      "waiting": true,
+      "delay": 0
+    },
+    "popGesture": "close",
+    "launchwebview": {
+      "id": "1",
+      "kernel": "WKWebview",
+      "uni-app": "auto"
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "dark",
+      "background": "#F8F8F8"
+    },
+    "usingComponents": true,
+    "nvueCompiler": "uni-app",
+    "distribute": {
+      "icons": {
+        "ios": {
+          "iphone": {
+            "app@2x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/120.png",
+            "app@3x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/180.png",
+            "spotlight@2x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/80.png",
+            "spotlight@3x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/120.png",
+            "settings@2x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/58.png",
+            "settings@3x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/87.png",
+            "notification@2x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/40.png",
+            "notification@3x": "C:/Users/Lenovo/Pictures/ios/newios/AppIcons (2)/Assets.xcassets/AppIcon.appiconset/60.png"
+          }
+        }
+      },
+      "splashscreen": {
+        "ios": {
+          "iphone": {
+            "portrait-896h@3x": "",
+            "retina55": ""
+          }
+        }
+      },
+      "google": {
+        "permissions": [
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+          "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+        ]
+      },
+      "apple": {
+        "privacyDescription": {
+          "NSPhotoLibraryUsageDescription": "读取相册仅用于读取相册图片作为个人头像",
+          "NSCameraUsageDescription": "摄像头调用仅用于拍摄图片作为个人头像",
+          "NSLocationWhenInUseUsageDescription": "你的位置信息将用于位置接口的效果展示",
+          "NSLocationAlwaysUsageDescription": "你的位置信息将用于位置接口的效果展示",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "你的位置信息将用于位置接口的效果展示"
+        }
+      },
+      "plugins": {
+        "maps": {},
+        "payment": {
+          "weixin": {
+            "appid": "wx283b21a6805f8ce9",
+            "UniversalLinks": "https://zl.haiyunzy.com/zlnewpro/tologin/"
+          }
+        },
+        "audio": {
+          "mp3": {
+            "description": "Android平台录音支持MP3格式文件"
+          }
+        }
+      }
+    },
+    "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#ffffff",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
+    "uni-app": {
+      "compilerVersion": "2.6.1",
+      "control": "v8",
+      "nvueCompiler": "uni-app",
+      "renderer": "auto",
+      "nvue": {
+        "flex-direction": "column"
+      }
+    },
+    "tabBar": {
+      "color": "#7A7E83",
+      "selectedColor": "#1296db",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "static/tab-home.png",
+          "selectedIconPath": "static/tab-home-current.png",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/shoplist/shoplist",
+          "iconPath": "static/tab-compass.png",
+          "selectedIconPath": "static/tab-compass-current.png",
+          "text": "附近小店"
+        },
+        {
+          "pagePath": "pages/carts/carts",
+          "iconPath": "static/unselectcart.png",
+          "selectedIconPath": "static/selectcart.png",
+          "text": "购物车"
+        },
+        {
+          "pagePath": "pages/mycenter/mycenter",
+          "iconPath": "static/tab-center.png",
+          "selectedIconPath": "static/tab-center-current.png",
+          "text": "个人中心"
+        }
+      ],
+      "height": "50px",
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 0
+    }
+  },
+  "usingComponents": {}
+}

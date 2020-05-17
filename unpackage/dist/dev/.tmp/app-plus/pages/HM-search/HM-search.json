@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商品搜索",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "m-search": "/components/mehaotian-search-revision/mehaotian-search-revision",
+    "nav-tab": "/components/navTab",
+    "back-top": "/components/back-top/back-top"
+  }
+}

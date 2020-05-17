@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shopdetail/shopdetail",
+    "pages/shoplist/shoplist",
+    "pages/goodtype/goodtype",
+    "pages/carts/carts",
+    "pages/mycenter/mycenter",
+    "pages/gooddetail/gooddetail",
+    "pages/preorder/preorder",
+    "pages/addresslist/addresslist",
+    "pages/myaddresslist/myaddresslist",
+    "pages/add-address/add-address",
+    "pages/orderdetail/orderdetail",
+    "pages/paysuccess/paysuccess",
+    "pages/payerror/payerror",
+    "pages/orderlist/orderlist",
+    "pages/login/login",
+    "pages/reg/reg",
+    "pages/pwd/pwd",
+    "pages/pay/pay",
+    "pages/carts_empty/carts_empty",
+    "pages/userinfo/userinfo",
+    "pages/logout/logout",
+    "pages/goodssearch/goodssearch",
+    "pages/HM-search/HM-search",
+    "pages/productlist/productlist"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab-home.png",
+        "selectedIconPath": "static/tab-home-current.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shoplist/shoplist",
+        "iconPath": "static/tab-compass.png",
+        "selectedIconPath": "static/tab-compass-current.png",
+        "text": "附近小店"
+      },
+      {
+        "pagePath": "pages/carts/carts",
+        "iconPath": "static/unselectcart.png",
+        "selectedIconPath": "static/selectcart.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mycenter/mycenter",
+        "iconPath": "static/tab-center.png",
+        "selectedIconPath": "static/tab-center-current.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "海韵之友",
+  "compilerVersion": "2.6.1",
+  "usingComponents": {}
+}

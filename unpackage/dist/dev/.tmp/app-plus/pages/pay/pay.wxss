@@ -1,0 +1,51 @@
+
+.container{
+	background: lightgrey;
+}
+.content{
+	background: white;
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+.listitem{
+	background: white;
+	font-size: 0.7rem;
+	color: #383030;
+	padding: 0.3rem 0rem 0.3rem 0rem;
+	border-bottom: 1px solid lightgrey;
+}
+.no_text{
+	color: black;
+	padding-left: 0.5rem;
+}
+.money_text{
+	color: red;
+	padding-left: 0.5rem;
+}
+.paytype_text{
+	color: black;
+	padding-left: 0.5rem;
+}
+.submitpay{
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+		background: red;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		height: 2rem;
+		line-height: 2rem;
+		 padding: 0.15rem;
+}
+.submitpay_text{
+	display: block;
+	color: white;
+	font-size: 0.9rem;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	text-align: center;
+}
+

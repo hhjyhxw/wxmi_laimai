@@ -1,0 +1,251 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "海韵之友",
+				 "enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/shopdetail/shopdetail",
+			"style": {
+				"navigationBarTitleText": "店铺商品"
+			}
+		},
+		
+		{
+		    "path" : "pages/shoplist/shoplist",
+		   "style": {
+		   	"navigationBarTitleText": "附近小店",
+			 "enablePullDownRefresh": true
+		   }
+		}
+		,
+		{
+	    "path" : "pages/goodtype/goodtype",
+		   "style" : {  
+				  // "navigationStyle":"custom"  
+				  "navigationBarTitleText": "分类商品"
+			   } 
+		},
+		{
+            "path" : "pages/carts/carts",
+            "style": {
+            	 // "navigationStyle":"custom" 
+				  "navigationBarTitleText": "购物车"
+            }
+        }
+        ,{
+            "path" : "pages/mycenter/mycenter",
+            "style": {
+            	"navigationBarTitleText": "个人中心"
+            }
+        }
+        ,{
+            "path" : "pages/gooddetail/gooddetail",
+            "style": {
+            	"navigationBarTitleText": "商品详情"
+            }
+        }
+        ,{
+            "path" : "pages/preorder/preorder",
+            "style": {
+            	"navigationBarTitleText": "订单确认"
+            }
+        }
+        ,{
+            "path" : "pages/addresslist/addresslist",
+            "style": {
+            	"navigationBarTitleText": "选择收货地址"
+            }
+        }
+        ,{
+            "path" : "pages/myaddresslist/myaddresslist",
+            "style": {
+            	"navigationBarTitleText": "我的收货地址",
+				"enablePullDownRefresh": true
+				
+            }
+        }
+        ,{
+            "path" : "pages/add-address/add-address",
+            "style": {
+            	"navigationBarTitleText": "增加收货地址"
+            }
+        }
+        ,{
+            "path" : "pages/orderdetail/orderdetail",
+            "style": {
+            	"navigationBarTitleText": "订单明细"
+            }
+        }
+        ,{
+            "path" : "pages/paysuccess/paysuccess",
+            "style": {
+            	"navigationBarTitleText": "支付成功"
+            }
+        }
+        ,{
+            "path" : "pages/payerror/payerror",
+           "style": {
+           	"navigationBarTitleText": "支付失败"
+           }
+        }
+        ,{
+            "path" : "pages/orderlist/orderlist",
+            "style": {
+            	"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": true
+            }
+        },
+		{
+		    "path" : "pages/login/login",
+		    "style": {
+		    	"navigationBarTitleText": "登陆"
+		    }
+		},
+		{
+		    "path" : "pages/reg/reg",
+		    "style": {
+		    	"navigationBarTitleText": "注册"
+		    }
+		},
+		{
+		    "path" : "pages/pwd/pwd",
+		    "style": {
+		    	"navigationBarTitleText": "忘记密码"
+		    }
+		}
+        ,{
+            "path" : "pages/pay/pay",
+            "style": {
+            	"navigationBarTitleText": "支付确认"
+            }
+        }
+        ,{
+            "path" : "pages/carts_empty/carts_empty",
+           "style": {
+           	"navigationBarTitleText": "购物车"
+           }
+        }
+        ,{
+            "path" : "pages/userinfo/userinfo",
+           "style": {
+           	"navigationBarTitleText": "个人信息"
+           }
+        }
+        ,{
+            "path" : "pages/logout/logout",
+            "style": {
+            	"navigationBarTitleText": "设置"
+            }
+        }
+        ,{
+            "path" : "pages/goodssearch/goodssearch",
+            "style": {
+            	"navigationBarTitleText": "商品搜索"
+            }
+        },
+		{
+		    "path" : "pages/HM-search/HM-search",
+		    "style": {
+		    	"navigationBarTitleText": "商品搜索",
+				"enablePullDownRefresh": true
+		    }
+		}
+		
+        ,{
+            "path" : "pages/productlist/productlist",
+            "style": {
+            	"navigationBarTitleText": "专题列表",
+				"enablePullDownRefresh": true
+            }
+        }
+    ],
+	
+ 	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}, 
+	/* "tabBar": {
+		"color": "#A0A0A0",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-current.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/scan/index",
+				"iconPath": "static/tab-scan.png",
+				"selectedIconPath": "static/tab-scan-current.png",
+				"text": "扫码充电"
+			},
+			{
+				"pagePath": "pages/stand/no-charging",
+				"iconPath": "static/tab-no.png",
+				"selectedIconPath": "static/tab-no-current.png",
+				"text": "编号充电"
+			},
+			{
+				"pagePath": "pages/stand/index",
+				"iconPath": "static/tab-compass.png",
+				"selectedIconPath": "static/tab-compass-current.png",
+				"text": "附近站点"
+			},
+			{
+				"pagePath": "pages/center/index",
+				"iconPath": "static/tab-center.png",
+				"selectedIconPath": "static/tab-center-current.png",
+				"text": "个人中心"
+			}
+		]
+	}, */
+	"tabBar": {
+		"color": "#7A7E83",
+	   "selectedColor": "#1296db",
+	   "borderStyle": "black",
+	   "backgroundColor": "#ffffff",
+	    "list": [
+	        {
+	            "pagePath": "pages/index/index",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-current.png",
+	            "text": "首页"
+	        },
+	        {
+	            "pagePath": "pages/shoplist/shoplist",
+				"iconPath": "static/tab-compass.png",
+				"selectedIconPath": "static/tab-compass-current.png",
+	            "text": "附近小店"
+	        },
+	        {
+	                "pagePath": "pages/carts/carts",
+					"iconPath": "static/unselectcart.png",
+					"selectedIconPath": "static/selectcart.png",
+	                "text": "购物车"
+	        },
+	        {
+	                "pagePath": "pages/mycenter/mycenter",
+					"iconPath": "static/tab-center.png",
+					"selectedIconPath": "static/tab-center-current.png",
+	                "text": "个人中心"
+	        }
+	    ]
+	},
+	"permission": {
+	    "scope.userLocation": {
+	      "desc": "你的位置信息将用于位置接口的效果展示"
+	    }
+	  }
+	
+	
+}

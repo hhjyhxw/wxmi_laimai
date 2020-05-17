@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/uni-goods-nav/uni-goods-nav"],{"041a":function(n,t,o){"use strict";(function(n){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var o={name:"UniGoodsNav",props:{options:{type:Array,default:function(){return[{icon:"https://img-cdn-qiniu.dcloud.net.cn/uniapp/uni-ui/goodsnav/dianpu.png",text:"店铺"},{icon:"https://img-cdn-qiniu.dcloud.net.cn/uniapp/uni-ui/goodsnav/carts.png",text:"购物车"}]}},buttonGroup:{type:Array,default:function(){return[{text:"加入购物车",backgroundColor:"rgb(204, 204, 204)",color:"#fff"},{text:"立即购买",backgroundColor:"rgb(170, 170, 170)",color:"#fff"}]}},fill:{type:Boolean,default:!1}},methods:{onClick:function(n,t){this.$emit("click",{index:n,content:t})},buttonClick:function(t,o){n.report&&n.report(o.text,o.text),this.$emit("buttonClick",{index:t,content:o})}}};t.default=o}).call(this,o("6e42")["default"])},"396b":function(n,t,o){"use strict";var u=o("f1a5"),e=o.n(u);e.a},"4d83":function(n,t,o){"use strict";o.r(t);var u=o("041a"),e=o.n(u);for(var i in u)"default"!==i&&function(n){o.d(t,n,function(){return u[n]})}(i);t["default"]=e.a},"58e9":function(n,t,o){"use strict";var u,e=function(){var n=this,t=n.$createElement;n._self._c},i=[];o.d(t,"b",function(){return e}),o.d(t,"c",function(){return i}),o.d(t,"a",function(){return u})},aaa7:function(n,t,o){"use strict";o.r(t);var u=o("58e9"),e=o("4d83");for(var i in e)"default"!==i&&function(n){o.d(t,n,function(){return e[n]})}(i);o("396b");var c,r=o("f0c5"),a=Object(r["a"])(e["default"],u["b"],u["c"],!1,null,"462f48c3",null,!1,u["a"],c);t["default"]=a.exports},f1a5:function(n,t,o){}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/uni-goods-nav/uni-goods-nav-create-component',
+    {
+        'components/uni-goods-nav/uni-goods-nav-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('6e42')['createComponent'](__webpack_require__("aaa7"))
+        })
+    },
+    [['components/uni-goods-nav/uni-goods-nav-create-component']]
+]);

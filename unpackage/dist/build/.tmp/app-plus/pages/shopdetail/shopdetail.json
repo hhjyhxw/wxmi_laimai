@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "店铺商品",
+  "usingComponents": {
+    "uni-swiper-dot": "/components/uni-swiper-dot/uni-swiper-dot"
+  }
+}
