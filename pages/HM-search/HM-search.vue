@@ -268,6 +268,8 @@
 						if (res.confirm) {
 							console.log('用户点击确定');
 							this.oldKeywordList = [];
+							this.defaultKeyword = '';
+							this.keyword = '';
 							uni.removeStorage({
 								key: 'OldKeys'
 							});
@@ -351,7 +353,7 @@
 			    if(result.code != '0000') return;
 			    this.queryData.totalPage = result.total;
 				let list = result.list;
-			   list.forEach(p => p.defaultSourceImagePath = this.$config.imghosturl+p.defaultSourceImagePath);
+			   // list.forEach(p => p.defaultSourceImagePath = this.$config.imghosturl+p.defaultSourceImagePath);
 			   //console.log("result.list=="+JSON.stringify(result.list));
 			   if(first) {//是否是刷新 或者第一次加载
 			       this.goodList = list ;
@@ -437,7 +439,7 @@
 	.nonegoods{
 		    text-align: center;
 		    margin-top: 2rem;
-		    font-size: 0.8rem;
+		    font-size: 1rem;
 		    display: block;
 	}
 	.gooditem{
@@ -454,7 +456,7 @@
 	}
 	.goodimgbox .goodimg{
 		width:100%;
-		height: 5rem;
+		height: 6.5rem;
 		overflow: hidden;
 		display: flex;
 		padding: 0.1rem;
@@ -470,7 +472,7 @@
 		font-size: 0.8rem;
 	}
 	.priceinfo{
-		font-size: 0.7rem;
+		font-size: 0.9rem;
 		color: red;
 		display: block;
 		position: absolute;
@@ -483,11 +485,11 @@
 	.originprice{
 			text-decoration: line-through;
 			margin-left: 0.1rem;
-			font-size: 0.7rem;
+			font-size: 1rem;
 			color: lightgrey;
 	}
 	.goodsales{
-		font-size: 0.6rem;
+		font-size: 0.8rem;
 		color: black;
 	}
 	

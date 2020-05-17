@@ -431,13 +431,13 @@ __webpack_require__.r(__webpack_exports__);
                 result.code != '0000')) {_context.next = 7;break;}return _context.abrupt("return");case 7:
                 _this2.queryData.totalPage = result.total;
                 perfectGoodsList = result.list;
-                perfectGoodsList.forEach(function (p) {return p.defaultSourceImagePath = _this2.$config.imghosturl + p.defaultSourceImagePath;});
+                // perfectGoodsList.forEach(p => p.defaultSourceImagePath = this.$config.imghosturl+p.defaultSourceImagePath);
                 //console.log("result.list=="+JSON.stringify(result.list));
                 if (first) {//是否是刷新 或者第一次加载
                   _this2.perfectGoodsList = perfectGoodsList;
                 } else {
                   _this2.perfectGoodsList = _this2.perfectGoodsList.concat(perfectGoodsList);
-                }case 11:case "end":return _context.stop();}}}, _callee);}))();
+                }case 10:case "end":return _context.stop();}}}, _callee);}))();
     },
 
     //获取专题位置列表

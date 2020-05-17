@@ -401,6 +401,8 @@ __webpack_require__.r(__webpack_exports__);
           if (res.confirm) {
             console.log('用户点击确定');
             _this2.oldKeywordList = [];
+            _this2.defaultKeyword = '';
+            _this2.keyword = '';
             uni.removeStorage({
               key: 'OldKeys' });
 
@@ -484,13 +486,13 @@ __webpack_require__.r(__webpack_exports__);
                 result.code != '0000')) {_context.next = 7;break;}return _context.abrupt("return");case 7:
                 _this4.queryData.totalPage = result.total;
                 list = result.list;
-                list.forEach(function (p) {return p.defaultSourceImagePath = _this4.$config.imghosturl + p.defaultSourceImagePath;});
+                // list.forEach(p => p.defaultSourceImagePath = this.$config.imghosturl+p.defaultSourceImagePath);
                 //console.log("result.list=="+JSON.stringify(result.list));
                 if (first) {//是否是刷新 或者第一次加载
                   _this4.goodList = list;
                 } else {
                   _this4.goodList = _this4.goodList.concat(list);
-                }case 11:case "end":return _context.stop();}}}, _callee);}))();
+                }case 10:case "end":return _context.stop();}}}, _callee);}))();
     } },
 
 

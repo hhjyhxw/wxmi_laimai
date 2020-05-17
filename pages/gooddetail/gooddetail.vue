@@ -194,8 +194,8 @@
 						  console.log(this.$config.imghosturl);
 						if(res.code=='0000'){
 							var regood = res.good;
-							regood.defaultSourceImagePath = this.$config.imghosturl+regood.defaultSourceImagePath;
-							this.goods = regood;
+							// regood.defaultSourceImagePath = this.$config.imghosturl+regood.defaultSourceImagePath;
+							this.goods = res.good;
 							this.supplier = regood.supplier;
 							if(regood.isMaiwan==true){
 								this.buttonGroup[1].backgroundColor="grey";
@@ -263,11 +263,11 @@
 
 				// var htmlString = content.replace(/\\/g, "").replace(/<img/g, "<img style=\"display:none;\"");
 				//content = content.replace(/(<img [^>]*src=['"]?)(?!https?)(\/[^ '">]+)/g,"http://www.haiyunzy.com");
-				if(goodDetail.indexOf('http://www.haiyunzy.com')== -1){
+			/* 	if(goodDetail.indexOf('http://www.haiyunzy.com')== -1){
 					goodDetail=goodDetail.replace(new RegExp(/src=\"/g), `style="display: block;margin: 0 auto;max-width: 100%" src="http://www.haiyunzy.com`);
 				}else{
 				goodDetail=goodDetail.replace(new RegExp(/src=\"/g), `style="display: block;margin: 0 auto;max-width: 100%" src="`);	
-				}
+				} */
 				this.nodes = htmlParser(goodDetail);
 				//this.nodes =htmlNodes;
 			},

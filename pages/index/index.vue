@@ -294,7 +294,7 @@
 			    if(result.code != '0000') return;
 			    this.queryData.totalPage = result.total;
 				var perfectGoodsList = result.list;
-				perfectGoodsList.forEach(p => p.defaultSourceImagePath = this.$config.imghosturl+p.defaultSourceImagePath);
+				// perfectGoodsList.forEach(p => p.defaultSourceImagePath = this.$config.imghosturl+p.defaultSourceImagePath);
 			   //console.log("result.list=="+JSON.stringify(result.list));
 			   if(first) {//是否是刷新 或者第一次加载
 			       this.perfectGoodsList = perfectGoodsList ;

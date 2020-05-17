@@ -341,8 +341,8 @@ var uniGoodsNav = function uniGoodsNav() {__webpack_require__.e(/*! require.ensu
         console.log(_this2.$config.imghosturl);
         if (res.code == '0000') {
           var regood = res.good;
-          regood.defaultSourceImagePath = _this2.$config.imghosturl + regood.defaultSourceImagePath;
-          _this2.goods = regood;
+          // regood.defaultSourceImagePath = this.$config.imghosturl+regood.defaultSourceImagePath;
+          _this2.goods = res.good;
           _this2.supplier = regood.supplier;
           if (regood.isMaiwan == true) {
             _this2.buttonGroup[1].backgroundColor = "grey";
@@ -410,11 +410,11 @@ var uniGoodsNav = function uniGoodsNav() {__webpack_require__.e(/*! require.ensu
 
       // var htmlString = content.replace(/\\/g, "").replace(/<img/g, "<img style=\"display:none;\"");
       //content = content.replace(/(<img [^>]*src=['"]?)(?!https?)(\/[^ '">]+)/g,"http://www.haiyunzy.com");
-      if (goodDetail.indexOf('http://www.haiyunzy.com') == -1) {
-        goodDetail = goodDetail.replace(new RegExp(/src=\"/g), "style=\"display: block;margin: 0 auto;max-width: 100%\" src=\"http://www.haiyunzy.com");
-      } else {
-        goodDetail = goodDetail.replace(new RegExp(/src=\"/g), "style=\"display: block;margin: 0 auto;max-width: 100%\" src=\"");
-      }
+      /* 	if(goodDetail.indexOf('http://www.haiyunzy.com')== -1){
+      		goodDetail=goodDetail.replace(new RegExp(/src=\"/g), `style="display: block;margin: 0 auto;max-width: 100%" src="http://www.haiyunzy.com`);
+      	}else{
+      	goodDetail=goodDetail.replace(new RegExp(/src=\"/g), `style="display: block;margin: 0 auto;max-width: 100%" src="`);	
+      	} */
       this.nodes = (0, _htmlParser.default)(goodDetail);
       //this.nodes =htmlNodes;
     }
