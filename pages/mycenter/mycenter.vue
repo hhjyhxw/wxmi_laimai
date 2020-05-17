@@ -2,9 +2,9 @@
 	<view>
 			<view class="carousel">
 				<view class="userInfo" @click="toMyinfo">
-					<image class="heardurl" :src="temheadurl"></image>
+					<image class="heardurl" :src="avatarUrl"></image>
 					<view class="user" v-if="accessToken!=null">
-						<view class="name">{{member.userName}}</view>
+						<view class="name">{{member.loginname}}</view>
 						<!-- <view class="phone"><text></text>{{member.mobile | nullFilter}}</view> -->
 					</view>
 					<view class="user" v-if="accessToken==null">
@@ -118,8 +118,8 @@
 			return {
 				// currentPage:'mycenter',
 				member:{
-					userName:'..',
-					mobile:'15077144027'
+					loginname:'..',
+					phone:'15077144027'
 				},
 				unshippedNum:0,//待收货
 				unpaidNum:0,//待付款
@@ -132,7 +132,7 @@
 			
 		},
 		onShow:function(){
-			this.member ={userName:''};
+			this.member ={loginname:''};
 			this.temheadurl = '../../static/image/user_touxiang.png';
 			this.unpaidNum = 0;
 			this.unshippedNum = 0;
@@ -163,7 +163,7 @@
 							this.unpaidNum = res.unpaidNum;
 							this.unshippedNum = res.unshippedNum;
 							
-							this.temheadurl = this.$config.hosturl+res.member.headImgUrl;
+							this.temheadurl = res.member.avatarUrl;
 							if(this.temheadurl==null || this.temheadurl==''){
 								this.temheadurl = '../../static/image/user_touxiang.png';
 							}

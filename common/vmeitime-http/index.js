@@ -64,7 +64,7 @@ export const getAdsList = () => { return http.post('/ads/getAdvertisementList')}
 
 //###################购物车#####
 //购物车列表
-export const cartItemList = () => { return http.get('/cartitem/cartItemList')};
+export const cartItemList = () => { return http.get('/cartitem/list')};
 //校验库存
 export const checkStore = (data) => { return http.get('/cartitem/checkStore',data)};
 //清空构成车

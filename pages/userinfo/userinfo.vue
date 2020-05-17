@@ -2,13 +2,13 @@
 	<view class="container">
 		<view class="content">
 			<view class="listitem">
-				<text class="text1">用户名</text><text>{{member.userName}}</text>
+				<text class="text1">用户名</text><text>{{member.loginname}}</text>
 			</view>
 			<view class="listitem gojiantou" @click="changeHeadphone">
-				<text class="text1">头像</text><image class="headImgUrl" :src="temheadurl"></image>
+				<text class="text1">头像</text><image class="headImgUrl" :src="avatarUrl"></image>
 			</view>
 			<view class="listitem gojiantou" @click="changenick">
-				<text class="text1">昵称</text><input class="inputtext1" v-model="member.nick" />
+				<text class="text1">昵称</text><input class="inputtext1" v-model="member.nickname" />
 			</view>
 			<view class="listitem gojiantou"  @click="changgader">
 				<text class="text1">性别</text>
@@ -28,7 +28,7 @@
 				<text class="text1" @click="changemail">邮箱</text><input class="inputtext1" v-model="member.email" />
 			</view>
 			<view class="listitem gojiantou" @click="changemoblie">
-				<text class="text1">手机</text> <input class="inputtext1" v-model="member.mobile"  />
+				<text class="text1">手机</text> <input class="inputtext1" v-model="member.phone"  />
 			</view>
 			
 			<view @click="saveInfo" class="savbtn" :style="{'display':isShow ? 'block':'none'}">保存修改</view>
@@ -41,9 +41,9 @@
 		data() {
 			return {
 				member:{
-					userName:'zdh',
-					nick:'阿木木',
-					headImgUrl:'http://thirdwx.qlogo.cn/mmopen/HpicclFcicSt5tNZQSr2vPT1NVZSjiaoUCACetNbCd7Cy2ibIobUFJibHM7M8l7MTIRPqXaxZKoW1ZHuEjFYefhyyVkicvkZ1Fh10D/132',
+					loginname:'zdh',
+					nickname:'阿木木',
+					avatarUrl:'http://thirdwx.qlogo.cn/mmopen/HpicclFcicSt5tNZQSr2vPT1NVZSjiaoUCACetNbCd7Cy2ibIobUFJibHM7M8l7MTIRPqXaxZKoW1ZHuEjFYefhyyVkicvkZ1Fh10D/132',
 					gender:1,//1男 2女
 					email:'1096302465@qq.com',
 					mobile:'15077144027'

@@ -257,14 +257,14 @@ var _default =
       this.$api.cartItemList().then(function (res)
       {
         console.log(JSON.stringify(res));
-        console.log(_this.$config.imghosturl);
+        // console.log(this.$config.imghosturl);
         if (res.list != null && res.list.length > 0) {
           var supplierList = res.list;
-          supplierList.forEach(function (p) {
-            p.careItemList.forEach(function (k) {
-              k.listImgPath = _this.$config.imghosturl + k.listImgPath;
-            });
-          });
+          // supplierList.forEach((p) => {
+          // 	p.careItemList.forEach((k) => {
+          // 		k.listImgPath = this.$config.imghosturl+k.listImgPath
+          // 	});
+          // });
           _this.supplierList = supplierList;
           _this.recaculate();
         } else {

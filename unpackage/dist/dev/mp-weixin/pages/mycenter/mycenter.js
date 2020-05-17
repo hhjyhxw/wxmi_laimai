@@ -251,8 +251,8 @@ var _default = {
     return {
       // currentPage:'mycenter',
       member: {
-        userName: '..',
-        mobile: '15077144027' },
+        loginname: '..',
+        phone: '15077144027' },
 
       unshippedNum: 0, //待收货
       unpaidNum: 0, //待付款
@@ -265,7 +265,7 @@ var _default = {
 
   },
   onShow: function onShow() {
-    this.member = { userName: '' };
+    this.member = { loginname: '' };
     this.temheadurl = '../../static/image/user_touxiang.png';
     this.unpaidNum = 0;
     this.unshippedNum = 0;
@@ -296,7 +296,7 @@ var _default = {
           _this.unpaidNum = res.unpaidNum;
           _this.unshippedNum = res.unshippedNum;
 
-          _this.temheadurl = _this.$config.hosturl + res.member.headImgUrl;
+          _this.temheadurl = res.member.avatarUrl;
           if (_this.temheadurl == null || _this.temheadurl == '') {
             _this.temheadurl = '../../static/image/user_touxiang.png';
           }

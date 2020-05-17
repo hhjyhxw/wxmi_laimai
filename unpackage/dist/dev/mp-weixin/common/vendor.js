@@ -9212,7 +9212,7 @@ exports.getGoodlistByKeyword = getGoodlistByKeyword;var getAdsList = function ge
 
 //###################购物车#####
 //购物车列表
-exports.getAdsList = getAdsList;var cartItemList = function cartItemList() {return _interface.default.get('/cartitem/cartItemList');};
+exports.getAdsList = getAdsList;var cartItemList = function cartItemList() {return _interface.default.get('/cartitem/list');};
 //校验库存
 exports.cartItemList = cartItemList;var checkStore = function checkStore(data) {return _interface.default.get('/cartitem/checkStore', data);};
 //清空构成车

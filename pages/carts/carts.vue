@@ -124,14 +124,14 @@
 				this.$api.cartItemList().then(res =>
 					{
 						 console.log(JSON.stringify(res));
-						  console.log(this.$config.imghosturl);
+						  // console.log(this.$config.imghosturl);
 						if(res.list!=null && res.list.length>0){
 							let supplierList = res.list;
-							 supplierList.forEach((p) => {
-									p.careItemList.forEach((k) => {
-										k.listImgPath = this.$config.imghosturl+k.listImgPath
-									});
-							 });
+							 // supplierList.forEach((p) => {
+								// 	p.careItemList.forEach((k) => {
+								// 		k.listImgPath = this.$config.imghosturl+k.listImgPath
+								// 	});
+							 // });
 							 this.supplierList = supplierList;
 							 this.recaculate();
 						}else{

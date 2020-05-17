@@ -174,9 +174,9 @@ var _default =
   data: function data() {
     return {
       member: {
-        userName: 'zdh',
-        nick: '阿木木',
-        headImgUrl: 'http://thirdwx.qlogo.cn/mmopen/HpicclFcicSt5tNZQSr2vPT1NVZSjiaoUCACetNbCd7Cy2ibIobUFJibHM7M8l7MTIRPqXaxZKoW1ZHuEjFYefhyyVkicvkZ1Fh10D/132',
+        loginname: 'zdh',
+        nickname: '阿木木',
+        avatarUrl: 'http://thirdwx.qlogo.cn/mmopen/HpicclFcicSt5tNZQSr2vPT1NVZSjiaoUCACetNbCd7Cy2ibIobUFJibHM7M8l7MTIRPqXaxZKoW1ZHuEjFYefhyyVkicvkZ1Fh10D/132',
         gender: 1, //1男 2女
         email: '1096302465@qq.com',
         mobile: '15077144027' },
